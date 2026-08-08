@@ -1,20 +1,19 @@
-import java.util.Arrays;
-import java.util.Comparator;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Principal {
     public static void main(String[] args) {
+        Turma turmaB = new Turma();
 
-        // ORDENAMENTO DO PRÓPRIO ARRAY (notas):
-        int[] notas = {8, 5, 4, 9, 10};
-        Arrays.sort(notas);
-        System.out.println(Arrays.toString(notas));
+        turmaB.identificacao = "Maternal B";
+        turmaB.nomeProfessora = "Maria";
+        turmaB.alunos = new Aluno[3];
 
-        // REVERTER O ORDENAMENTO DO ARRAY (notas2:
-        Integer[] notas2 = {28, 17, 12, 29, 44};
-        Arrays.sort(notas2, Comparator.reverseOrder());
-        System.out.println(Arrays.toString(notas2));
+        turmaB.alunos[0] = new Aluno();
+        turmaB.alunos[0].nome = "João";
+        turmaB.alunos[0].idade = 20;
 
+        Aluno aluno1 = new Aluno();
+        aluno1.nome = "Maria";
+        aluno1.idade = 30;
+
+        turmaB.alunos[1] = aluno1;
     }
 }
