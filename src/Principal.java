@@ -5,14 +5,9 @@ public class Principal {
 
         int[] notas = {8, 5, 4, 9, 10};
 
-        System.out.println(notas[0]);
-        System.out.println(notas[3]);
-        System.out.println(notas[4]);
+        double resultado = Calculadora.calcularMedia(notas);
 
-        int posicao = 3;
-
-        System.out.println(notas[0]);
-        System.out.println(notas[posicao-1]);
+        System.out.printf("Resultado: %.2f%n", resultado);
 
 
     }
