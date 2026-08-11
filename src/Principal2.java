@@ -13,6 +13,9 @@ public class Principal2 {
         aluno1.idade = 4;
 
         turmaB.adicionarAluno(aluno1);
+        turmaB.adicionarAluno(aluno2);
+
+        turmaB.removerAluno(1);
 
         turmaB.imprimirListaAlunos();
 
